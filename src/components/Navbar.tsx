@@ -2,7 +2,7 @@ import logo from "../assets/logo-text.png";
 
 export default function Navbar() {
     return (
-        <nav className="border-b border-gray-100">
+        <nav className="sticky top-0 bg-white border-b border-gray-100">
             <div className="container mx-auto flex items-center justify-between py-4">
                 <img src={logo} className="h-12" />
 
