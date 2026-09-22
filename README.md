@@ -30,3 +30,35 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+
+#Dev-Stack
+-react project where we add or remove different technology.we can also card remove all at a time.
+
+## Technologi: 
+react, typescript,tailwind,json
+
+## feature:
+add card,remove card,toast
+
+## Question:
+i. JSX allows write htlm-like code inside javascript.
+react makes react ui.
+
+ii.props pass the data from parent to child only.
+state store and manage data inside component 
+
+iii.useState stored and update data in component
+I used it to store technologies
+
+iv.useEffect hook run code after component render
+I used it to fetch technology data
+
+v.unique key identify each item and can update efficiently
+
+vi.condition rendering shows diffenrent ui depend on condition
+Ex:stack is empty when there is no item,if add then it add 
+
+vii.data is pass from parent
+use props and function
+
