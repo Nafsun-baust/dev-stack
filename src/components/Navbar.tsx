@@ -6,7 +6,7 @@ export default function Navbar() {
             <div className="container mx-auto flex items-center justify-between py-4">
                 <img src={logo} className="h-12" />
 
-                <ul className="flex gap-7 font-semibold text-2xl text-slate-500">
+                <ul className="hidden md:flex gap-7 font-semibold text-2xl text-slate-500">
                     <li>Home</li>
                     <li>Technologies</li>
                     <li>Projects</li>
