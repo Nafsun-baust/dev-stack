@@ -5,6 +5,10 @@ A React-based web application that lets users explore development technologies a
 **Live Demo:** https://silver-sundae-b2e30c.netlify.app/  
 **Repository:** https://github.com/Nafsun-baust/dev-stack
 
+## Homepage Screenshot
+
+![Dev Stack Homepage Screenshot](./dev-stack%20home%20ss.jpg)
+
 ## Overview
 
 Dev Stack presents a collection of technologies grouped by category. Users can add technologies to their own stack, avoid duplicate selections, remove individual items, or clear the complete selection.
