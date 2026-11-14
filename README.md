@@ -1,64 +1,109 @@
-# React + TypeScript + Vite
+# Dev Stack — Technology Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React-based web application that lets users explore development technologies and build a personalized technology stack by selecting and removing technology cards.
 
-Currently, two official plugins are available:
+**Live Demo:** https://silver-sundae-b2e30c.netlify.app/  
+**Repository:** https://github.com/Nafsun-baust/dev-stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+Dev Stack presents a collection of technologies grouped by category. Users can add technologies to their own stack, avoid duplicate selections, remove individual items, or clear the complete selection.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technology information is loaded from a local JSON file, so no external API key is required.
 
-## Expanding the Oxlint configuration
+## Key Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Explore technology cards across categories such as frontend, backend, database, language, styling, and DevOps.
+- Build a personalized stack by selecting technologies.
+- Prevent duplicate technologies from being added.
+- Remove a selected technology individually.
+- Clear the entire selected stack.
+- Display toast notifications for successful, duplicate, and removal actions.
+- Load technology information from `public/data.json`.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Technology Stack
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- **UI Library:** React 19
+- **Language:** TypeScript
+- **Build Tool:** Vite 8
+- **Styling:** Tailwind CSS 4
+- **Icons:** React Icons
+- **Notifications:** React Toastify
+- **Data:** Local JSON
+- **Linting:** Oxlint
 
+## Main Dependencies
 
-#Dev-Stack
--react project where we add or remove different technology.we can also card remove all at a time.
+### Runtime dependencies
 
-## Technologi: 
-react, typescript,tailwind,json
+- `react`
+- `react-dom`
+- `@tailwindcss/vite`
+- `tailwindcss`
+- `react-icons`
+- `react-toastify`
 
-## feature:
-add card,remove card,toast
+### Development dependencies
 
-## Question:
-i. JSX allows write htlm-like code inside javascript.
-react makes react ui.
+- `vite`
+- `typescript`
+- `@vitejs/plugin-react`
+- `oxlint`
+- `@types/node`
+- `@types/react`
+- `@types/react-dom`
 
-ii.props pass the data from parent to child only.
-state store and manage data inside component 
+See [package.json](./package.json) for exact package versions.
 
-iii.useState stored and update data in component
-I used it to store technologies
+## Run Locally
 
-iv.useEffect hook run code after component render
-I used it to fetch technology data
+### Prerequisites
 
-v.unique key identify each item and can update efficiently
+- Node.js
+- npm
 
-vi.condition rendering shows diffenrent ui depend on condition
-Ex:stack is empty when there is no item,if add then it add 
+### Installation
 
-vii.data is pass from parent
-use props and function
+1. Clone the repository:
 
+   ```bash
+   git clone https://github.com/Nafsun-baust/dev-stack.git
+   cd dev-stack
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local URL printed by Vite in your browser (usually [http://localhost:5173](http://localhost:5173)).
+
+### Available Scripts
+
+- `npm run dev` — start the Vite development server.
+- `npm run build` — type-check and build the production app.
+- `npm run preview` — preview the production build locally.
+- `npm run lint` — run Oxlint.
+
+## Project Structure
+
+- `src/components/` — reusable interface components.
+- `src/App.tsx` — main application layout.
+- `src/main.tsx` — application entry point.
+- `public/data.json` — technology catalogue used by the app.
+
+## Project Links
+
+- **Live Demo:** https://silver-sundae-b2e30c.netlify.app/
+- **GitHub Repository:** https://github.com/Nafsun-baust/dev-stack
+
+---
+
+Developed by **MD Nafsun Kabir**.
